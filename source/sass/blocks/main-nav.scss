@@ -1,0 +1,54 @@
+.main-nav {
+  color: $black;
+  display: flex;
+  align-items: center;
+}
+
+.main-nav__list {
+  @include clear-list;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.main-nav__list a {
+  color: $black;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: $blue;
+    text-underline-offset: 13px;
+    text-decoration-thickness: 3px;
+  }
+
+  &:focus {
+    color: $blue;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.main-nav__toggle {
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin-left: 6vw;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
+
+.main-nav__item:not(:last-of-type) {
+  margin-right: 28px;
+} 

@@ -1,0 +1,23 @@
+.documents__title {
+  font-family: $font-title;
+  font-size: 62px;
+  font-weight: 600;
+}
+
+.documents__list {
+  @include clear-list;
+}
+
+.documents__item {
+  width: 90%;
+  padding: 10px 40px 20px 50px;
+  border-radius: 50px;
+  background-color: $lignt-gray;
+  margin-bottom: 50px;
+}
+
+.documents__name {
+  font-family: $font;
+  font-size: 40px;
+  font-weight: 400;
+}

@@ -1,0 +1,28 @@
+.page-header {
+  min-height: 122px;
+  font-family: $font;
+  font-size: 20px;
+  width: 100%;
+  background-color: $white;
+  box-shadow: 0 5px 4px 1px $shadow;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: $desktop-container-width;
+  padding: 25px 0 22px 0;
+}
+
+.page-header__logo {
+  font-weight: normal;
+  line-height: 18px;
+  color: $black;
+  cursor: default;
+}
+
+.page-header__logo:first-letter {
+  color: $blue;
+  font-weight: 900;
+}

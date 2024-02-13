@@ -1,0 +1,29 @@
+.about {
+  display: flex;
+  font-family: $font;
+  background-color: $lignt-gray;
+
+}
+
+.about__wrapper {
+  padding-left: 590px;
+  padding-bottom: 10px;
+  background-image: url("../img/about.jpg");
+  background-position: -28px 0;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.about__title {
+  font-family: $font-title;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-top: 44px;
+}
+
+.about__text {
+  font-size: 18px;
+  line-height: 25px;
+  //text-align: justify;
+}

@@ -1,0 +1,15 @@
+.lock-menu {
+  @media (max-width: $tablet-max-width) {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1000;
+  }
+}
+
+.lock {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1000;
+}
