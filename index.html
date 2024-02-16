@@ -2,17 +2,23 @@
 <html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Платная медицина Мытищи">
     <title>Платные услуги</title>
     <link rel="preload" href="fonts/opensans-bold.woff2" as="font" crossorigin="">
     <link rel="preload" href="fonts/opensans-regular.woff2" as="font" crossorigin="">
     <link rel="preload" href="fonts/opensans-semibold.woff2" as="font" crossorigin="">
+    <link rel="preload" href="fonts/roboto-black.woff2" as="font" crossorigin="">
+    <link rel="preload" href="fonts/roboto-light.woff2" as="font" crossorigin="">
+    <link rel="preload" href="fonts/roboto-regular.woff2" as="font" crossorigin="">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
 
+    <svg style="display: none">
+      <symbol viewBox="0 0 68 21" id="logo">
+    </symbol>
+  </svg>
     <header class="page-header">
       <div class="page-header__wrapper container">
         <a href="#" class="page-header__logo">
@@ -21,16 +27,16 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">О нас</a>
+              <a href="#about_block" class="main-nav__link">О нас</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Наши услуги</a>
+              <a href="#services_block" class="main-nav__link">Наши услуги</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Наши специалисты</a>
+              <a href="#specialists_block" class="main-nav__link">Наши специалисты</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Правовая информация</a>
+              <a href="#documents_block" class="main-nav__link">Правовая информация</a>
             </li>
           </ul>
           <a href="tel:+74955864344" class="main-nav__toggle">
@@ -56,7 +62,7 @@
         <div class="promo__wrapper container">
           <p class="promo__title">Платные услуги</p>
           <p class="promo__text">Ваше здоровье <span>–</span> наша работа</p>
-          <a href="tel:+74955864344" class="promo__button button">Записаться</a>
+          <a href="tel:+74955864344" class="promo__button button" id="about_block">Записаться</a>
         </div>
       </section>
 
@@ -64,7 +70,7 @@
         <div class="about__wrapper container">
 
           <h2 class="about__title">О нас</h2>
-          <p class="about__text">Мытищинская областная клиническая больница - одно из самых крупных лечебно-профилактических учреждений Московской области. В ее составе – 9 поликлиник, которые оснащены новейшим оборудованием, в стационарах продолжается  «перезагрузка», оснащение новым современным оборудованием. Сегодня  Мытищинская больница – современный  лечебно-диагностический  комплекс, оказывающий жителям округа высококвалифицированную и высокотехнологичную, специализированную стационарную,  амбулаторно-поликлиническую и неотложную помощь.</p>
+          <p class="about__text" id="services_block">Мытищинская областная клиническая больница - одно из самых крупных лечебно-профилактических учреждений Московской области. В ее составе – 9 поликлиник, которые оснащены новейшим оборудованием, в стационарах продолжается  «перезагрузка», оснащение новым современным оборудованием. Сегодня  Мытищинская больница – современный  лечебно-диагностический  комплекс, оказывающий жителям округа высококвалифицированную и высокотехнологичную, специализированную стационарную,  амбулаторно-поликлиническую и неотложную помощь.</p>
         </div>
       </section>
 
@@ -73,9 +79,9 @@
           <h2 class="services__title">Наши услуги</h2>
           <ul class="services__list">
             <li class="services__card">
-              <!--<picture class="services__card-img">
+              <picture class="services__card-img visually-hidden">
                 <img src="img/travm.jpg" width="1280" height="853" alt="Травматология и ортопедия фото">
-              </picture> -->
+              </picture> 
               <div class="services__card-content">
                 <h3 class="services__card-title">Травматология и ортопедия</h3>
                 <a class="services__card-more visually-hidden" href="">Подробнее</a>
@@ -92,9 +98,9 @@
               </div>
             </li>
             <li class="services__card">
-             <!-- <picture class="services__card-img">
+             <picture class="services__card-img visually-hidden">
                 <img src="img/sh.jpg" width="600" height="399" alt="Сосудистая хирургия фото">
-              </picture> -->
+              </picture>
               <div class="services__card-content">
                 <h3 class="services__card-title">Сосудистая хирургия</h3>
                 <a class="services__card-more visually-hidden" href="">Подробнее</a>
@@ -126,9 +132,9 @@
               </div>
             </li>
             <li class="services__card">
-              <!--<picture class="services__card-img">
+              <picture class="services__card-img visually-hidden">
                 <img src="img/end.jpg" width="600" height="399" alt="Эндоскопия фото">
-              </picture>-->
+              </picture>
               <div class="services__card-content">
                 <h3 class="services__card-title">Эндоскопия</h3>
                 <a class="services__card-more visually-hidden" href="">Подробнее</a>
@@ -142,9 +148,9 @@
               </div>
             </li>
             <li class="services__card">
-             <!-- <picture class="services__card-img">
+             <picture class="services__card-img">
                 <img src="img/st.jpg" width="600" height="399" alt="Стоматология фото">
-              </picture> -->
+              </picture>
               <div class="services__card-content">
                 <h3 class="services__card-title">Стоматология</h3>
                 <a class="services__card-more visually-hidden" href="">Подробнее</a>
@@ -158,7 +164,7 @@
                   </ul>
                   <p>В поликлинике 6 работает детский кабинет врача-стоматолога.  </p>    
                   <p><span>Узнать  о стоимости стоматологических платных услуг можно:</span> </p>
-                  <ul>
+                  <ul id="specialists_block">
                     <li>в поликлинике №2 (ул. Юбилейная, д. 10Б) по номеру: <a href="tel:+74953081340">+ 7 (495) 308–13–40</a></li>
                     <li>в поликлинике №6  (ул. Ильинского 4 к.2) можно по номеру: <a href="tel:+749530813320P6119">+7(495) 308 13-32 доб.6119</a></li>
                   </ul>
@@ -178,10 +184,10 @@
               <p class="specialists_position">Заведующий травматологическим отделением</p>
             </li>
             <li class="specialists__item">
-              <img src="img/Kakorin.jpg" width="273" height="273" alt="Какорин Сергей Валентинович">
-              <p class="specialists_last-name">Какорин</p>
-              <p class="specialists_name">Сергей Валентинович</p>
-              <p class="specialists_position">Заведующий отделением неотложной кардиологии</p>
+              <img src="img/Shadskyi.jpg" width="273" height="273" alt="Шадский Станислав Олегович">
+              <p class="specialists_last-name">Шадский</p>
+              <p class="specialists_name">Станислав Олегович</p>
+              <p class="specialists_position">Заведующий эндоскопическим отделением </p>
             </li>
             <li class="specialists__item">
               <img src="img/Eganov.jpg" width="273" height="273" alt="Еган Павлович Еганов">
@@ -189,37 +195,70 @@
               <p class="specialists_name">Еган Павлович</p>
               <p class="specialists_position">Заведующий отделением функциональной и УЗИ-диагностики</p>
             </li>
+            <li class="specialists__item">
+              <img src="img/Kakorin.jpg" width="273" height="273" alt="Какорин Сергей Валентинович">
+              <p class="specialists_last-name">Какорин</p>
+              <p class="specialists_name">Сергей Валентинович</p>
+              <p class="specialists_position">Заведующий отделением неотложной кардиологии</p>
+            </li>
+            <li class="specialists__item">
+              <img src="img/Polyakov.jpg" width="273" height="273" alt="Поляков Никита Сергеевич">
+              <p class="specialists_last-name">Поляков</p>
+              <p class="specialists_name">Никита Сергеевич</p>
+              <p class="specialists_position">Заведующий травматологическим пунктом</p>
+            </li>
+            <li class="specialists__item">
+              <img src="img/Korjov.jpg" width="273" height="273" alt="Коржов Александр Анатольевич">
+              <p class="specialists_last-name">Коржов</p>
+              <p class="specialists_name">Александр Анатольевич</p>
+              <p class="specialists_position">Заведующий операционным блоком</p>
+            </li>
           </ul>
         </div>
       </section>
 
-      <section class="documents">
+      <section class="documents" id="documents_block">
         <div class="documents__wrapper container">
           <h2 class="documents__title">Правовая информация</h2>
           <ul class="documents__list">
             <li class="documents__item">
-              <h3 class="documents__name">Прейскурант</h3>
-              <a href="https://lpu.zdrav.mosreg.ru/userfiles/files/mitischinskaya/%D0%9C%D1%8B%D1%82%D0%B8%D1%89%D0%B8.xlsx"><img src="img/pr.jpg" width="561" height="854" alt="Прейскурант"></a>
-                <button type="button" class="documents__button visually-hidden" aria-label="Open/close button">
-                  <svg width="50" height="30" viewBox="0 0 50 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="2.79496" y1="3.1385" x2="27.3664" y2="27.1385" stroke="#42C8F2" stroke-width="8"></line>
-                    <line x1="2.79496" y1="3.1385" x2="27.3664" y2="27.1385" stroke="#42C8F2" stroke-width="8"></line>
-                    <line y1="-4" x2="34.3476" y2="-4" transform="matrix(-0.715376 0.69874 0.69874 0.715376 49.1428 6)" stroke="#42C8F2" stroke-width="8"></line>
-                    <line y1="-4" x2="34.3476" y2="-4" transform="matrix(-0.715376 0.69874 0.69874 0.715376 49.1428 6)" stroke="#42C8F2" stroke-width="8"></line>
-                  </svg>
-              </button>
+              <a class="documents_link" href="https://lpu.zdrav.mosreg.ru/gbuz_mo_mitischinskaya_oblastnaya_klinicheskaya_bolnitsa/platnie_uslugi/pravila_predostavleniya_platnih_uslug">Правила предоставления платных услуг</a>
             </li>
             <li class="documents__item">
-              <h3 class="documents__name">Выписка из реестра лицензий</h3>
-              <a href="https://lpu.zdrav.mosreg.ru/media/files/l0410116250_00574973_20240125.pdf"><img src="img/vp.jpg" width="525" height="638" alt="Выписка из реестра лицензий"></a>
-                <button type="button" class="documents__button visually-hidden" aria-label="Open/close button">
-                  <svg width="50" height="30" viewBox="0 0 50 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="2.79496" y1="3.1385" x2="27.3664" y2="27.1385" stroke="#42C8F2" stroke-width="8"></line>
-                    <line x1="2.79496" y1="3.1385" x2="27.3664" y2="27.1385" stroke="#42C8F2" stroke-width="8"></line>
-                    <line y1="-4" x2="34.3476" y2="-4" transform="matrix(-0.715376 0.69874 0.69874 0.715376 49.1428 6)" stroke="#42C8F2" stroke-width="8"></line>
-                    <line y1="-4" x2="34.3476" y2="-4" transform="matrix(-0.715376 0.69874 0.69874 0.715376 49.1428 6)" stroke="#42C8F2" stroke-width="8"></line>
-                  </svg>
-              </button>
+              <a class="documents_link" href="https://lpu.zdrav.mosreg.ru/userfiles/files/mitischinskaya/%D0%9C%D1%8B%D1%82%D0%B8%D1%89%D0%B8.xlsx">Прейскурант</a>
+            </li>
+            <li class="documents__item">
+              <a class="documents_link" href="https://lpu.zdrav.mosreg.ru/media/files/l0410116250_00574973_20240125.pdf">Выписка из реестра лицензий</a>
+            </li>
+
+
+
+            <li class="documents__item">
+              <a class="documents_link" href="https://lpu.zdrav.mosreg.ru/gbuz_mo_mitischinskaya_oblastnaya_klinicheskaya_bolnitsa/patsientu/dokumenti_dlya_patsientov#:~:text=%D0%9E%20%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B5%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B3%D0%B0%D1%80%D0%B0%D0%BD%D1%82%D0%B8%D0%B9%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%B3%D1%80%D0%B0%D0%B6%D0%B4%D0%B0%D0%BD%D0%B0%D0%BC%20%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B9%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D0%B8%20%D0%BD%D0%B0%202024%20%D0%B3%D0%BE%D0%B4%20%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BB%D0%B0%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%BF%D0%B5%D1%80%D0%B8%D0%BE%D0%B4%202025%20%D0%B8%202026%20%D0%B3%D0%BE%D0%B4%D0%BE%D0%B2">О Программе государственных гарантий бесплатного оказания гражданам медицинской помощи на 2024 год и на плановый период 2025 и 2026 годов</a>
+            </li>
+            <li class="documents__item">
+              <a class="documents_link" href="https://disk.yandex.ru/i/58nAdhKj5QYs3w">Правила внутреннего распорядка ГБУЗ МО "Мытищинская ОКБ"</a>
+            </li>
+            <li class="documents__item">
+              <a class="documents_link" href="https://disk.yandex.ru/i/QjK0OqIdmwJBag">Устав ГБУЗ МО "Мытищинская ОКБ"</a>
+            </li>
+            <li class="documents__item">
+              <a class="documents_link" href="https://lpu.zdrav.mosreg.ru/media/files/%D0%9F%D0%BE%D1%81%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D1%8F_20231213.docx">Общие требования к организации посещения пациента родственниками и иными членами семьи или законными представителями пациента в ГБУЗ МО «Мытищинская ОКБ», в том числе в ее структурных подразделениях, предназначенных для проведения интенсивной терапии и реанимационных мероприятий, при оказании ему медицинской помощи в стационарных условиях</a>
+            </li>
+            <li class="documents__item">
+              <a class="documents_link" href="https://lpu.zdrav.mosreg.ru/gbuz_mo_mitischinskaya_oblastnaya_klinicheskaya_bolnitsa/library/prava_i_obyazannosti_grazhdan_v_sfere_ohrani_zdorovya_323_FZ">Права и обязанности граждан в сфере охраны здоровья (N 323-ФЗ)</a>
+            </li>
+            <li class="documents__item">
+              <a class="documents_link" href="https://lpu.zdrav.mosreg.ru/gbuz_mo_mitischinskaya_oblastnaya_klinicheskaya_bolnitsa/library/ob-utverzhdenii-poryadka-provedeniya-profilakticheskogo-medicinskogo-osmotra-i-dispanserizacii">Об утверждении Порядка проведения профилактического медицинского осмотра и диспансеризации</a>
+            </li>
+            <li class="documents__item">
+              <a class="documents_link" href="https://lpu.zdrav.mosreg.ru/gbuz_mo_mitischinskaya_oblastnaya_klinicheskaya_bolnitsa/patsientu/dokumenti_dlya_patsientov#:~:text=%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B0%20%D0%B8%20%D0%B4%D0%B8%D1%81%D0%BF%D0%B0%D0%BD%D1%81%D0%B5%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8-,%D0%9E%D0%B1%D1%89%D0%B8%D0%B5%20%D1%82%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%BA%20%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%20%D0%BF%D0%BE%D1%81%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%B0%D1%86%D0%B8%D0%B5%D0%BD%D1%82%D0%B0%20%D1%80%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8%C2%A0,-%D0%9E%20%D0%9F%D0%BE%D1%80%D1%8F%D0%B4%D0%BA%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F">Общие требования к организации посещения пациента родственниками </a>
+            </li>
+            <li class="documents__item">
+              <a class="documents_link" href="https://lpu.zdrav.mosreg.ru/media/files/%D0%9F%D1%80%D0%B8%D0%BA%D0%B0%D0%B7%20%D0%9C%D0%97%20%D0%A0%D0%A4%20%D0%BE%D1%82%2010%20%D0%B0%D0%B2%D0%B3%D1%83%D1%81%D1%82%D0%B0%202017%20%D0%B3%20N%20514%D0%BD%20%D0%9E%20%D0%9F%D0%BE%D1%80%D1%8F%D0%B4%D0%BA%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D1%85%20%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D1%85%20%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%BE%D0%B2%20%D0%BD%D0%B5%D1%81%D0%BE%D0%B2%D0%B5%D1%80%D1%88%D0%B5%D0%BD%D0%BD%D0%BE%D0%BB%D0%B5%D1%82%D0%BD%D0%B8%D1%85_20231211.doc">О Порядке проведения профилактических медицинских осмотров несовершеннолетних</a>
+            </li>
+            <li class="documents__item">
+              <a class="documents_link" href="https://lpu.zdrav.mosreg.ru/media/files/%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD%20%D0%BE%D1%82%2030%20%D0%BC%D0%B0%D1%80%D1%82%D0%B0%201999%20%D0%B3%20N%2052%20%D0%A4%D0%97%20%D0%9E%20%D1%81%D0%B0%D0%BD%D0%B8%D1%82%D0%B0%D1%80%D0%BD%D0%BE-%D1%8D%D0%BF%D0%B8%D0%B4%D0%B5%D0%BC%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%BC%20%D0%B1%D0%BB%D0%B0%D0%B3%D0%BE%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D0%B8%20%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F_20231211.doc">О санитарно-эпидемиологическом благополучии населения</a>
             </li>
           </ul>
         </div>
@@ -229,9 +268,9 @@
     </section></main>
 
     <footer class="page-footer">
-      <div class="container">
+      <div class="page-footer__wrapper container">
       <h2 class="page-footer__title">Контакты</h2>
-      <div class="social">
+      <div class="page-footer__social social">
         <ul class="social__list">
             <li class="social__item">
               <a href="https://t.me/mgkb_med" class="social__link social__link--tg">
@@ -250,7 +289,7 @@
             </li>
           </ul>
       </div>
-        <div class="page-footer__contacts">
+        <div class="page-footer__contacts contacts">
           <ul class="contacts__list">
             <li class="contacts__item contacts__item--tel">
               <a href="tel:+749530813320P6119" class="contacts__link">8 (495) 308-13-32 доб. 5997 с 9:00 до 17:00</a>
@@ -262,6 +301,19 @@
               <a href="https://yandex.ru/maps/org/mytishchinskaya_oblastnaya_klinicheskaya_bolnitsa/151765803587/?ll=37.777697%2C55.922928&z=17" class="contacts__link">141009, Московская область, г. Мытищи, ул. Коминтерна, 24</a>
             </li>
           </ul>
+        </div>
+      </div>
+      <div class="page-footer__info">
+        <div class="page-footer__info-text container">
+          <p>Государственное бюджетное учреждение здравоохранения Московской области «Мытищинская областная клиническая больница»</p>
+
+          <p>Учредителем ГБУЗ Московской области «Мытищинская ОКБ» является Московская область</p>
+
+          <p>Функции и полномочия учредителя ГБУЗ Московской области «Мытищинская ОКБ» осуществляет Министерство здравоохранения Московской области</p>
+
+          <p>Основной государственный регистрационный номер записи о государственной регистрации – 1035005503356</p>
+
+          <p>Дата государственной регистрации – 02 февраля 1999 года</p>
         </div>
       </div>
     </footer>
