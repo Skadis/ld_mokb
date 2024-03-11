@@ -916,17 +916,14 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-family: "Roboto", "Arial", sans-serif;
 }
 @media (max-width: 1023px) {
   .specialists__list {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     gap: 20px;
   }
 }
@@ -935,6 +932,10 @@ span {
   width: 273px;
   margin-right: 35px;
   margin-bottom: 20px;
+}
+.specialists__item:nth-child(3) {
+  margin-right: 0;
+  margin-left: 35px;
 }
 @media (max-width: 1023px) {
   .specialists__item {
